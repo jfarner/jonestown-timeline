@@ -1,17 +1,19 @@
+
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
+
 }
 .timeline:before {
   top: 0;
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 3px;
-  background-color: #EE2A1B;
-  left: 10%;
-  margin-left: -1.5px;
+  width: 40px;
+  background-color: #ff0000;
+  left: 6.7%;
+  margin-left: -20px;
 }
 .timeline > li {
   margin-bottom: 20px;
@@ -39,21 +41,21 @@
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   padding: 20px;
+  left: -40%;
   position: relative;
-  right: 40%;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
 .timeline > li > .timeline-button {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   font-size: 1.4;
   position: absolute;
   top: 16px;
-  left: 10%;
+  left: 5%;
   margin-left: -25px;
-  background-color: #999999;
+  background-color: #ff0000;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -67,4 +69,3 @@
 .timeline-title {
   margin-top: 0;
 }
-
