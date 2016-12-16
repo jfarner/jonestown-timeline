@@ -4,10 +4,15 @@
   padding: 20px 0 20px;
   position: relative;
 
+
 }
+.timeline >li > .timeline-panel:hover {
+	height: auto;
+}
+
 .timeline:before {
-  top: 0;
-  bottom: 0;
+  top: 40px;
+  bottom: 130px;
   position: absolute;
   content: " ";
   width: 40px;
@@ -18,6 +23,7 @@
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
+
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -37,6 +43,7 @@
 }
 .timeline > li > .timeline-panel {
   width: 46%;
+  height: auto;
   float: left;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
@@ -45,6 +52,7 @@
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  transition: all 3s;
 }
 
 .timeline > li > .timeline-button {
@@ -61,38 +69,32 @@
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:hover{
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
 }
 
 .timeline-title {
   margin-top: 0;
 }
+p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: white-space 3s;
+	transition: overflow 3s;
+	transition: text-overflow 3s;
 
-.bubble
-{
-position: relative;
-width: 250px;
-height: 120px;
-padding: 0px;
-background: #FFFFFF;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
 }
+p:hover, h4:hover{
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
 
-.bubble:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 13px 37px 13px 0;
-border-color: transparent #FFFFFF;
-display: block;
-width: 0;
-z-index: 1;
-left: -37px;
-top: 9px;
-
-/*http://codepen.io/jeffmccarthyesq/pen/LEEKLZ
+}
