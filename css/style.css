@@ -154,8 +154,15 @@ h1 {
   text-align: center;
 }
 
+img{
+	float: right;
+	margin-left: 2vw;
+	margin-bottom: 2vh;
+}
+
 .page-header{
   height: 100vh;
+  
 }
 .listing{
   display: block;
