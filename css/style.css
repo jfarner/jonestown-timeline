@@ -152,9 +152,7 @@ h1 {
   font-size: 12.0vw;
   padding: 14vh 5vw 5vh 14vh;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 19px 3px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 19px 3px rgba(0,0,0,1);
-  box-shadow: 0px 0px 19px 3px rgba(0,0,0,1);
+  text-shadow: -4px 3px 0 #000000, -14px 7px 0 #B21212;
 }
 
 #image{
@@ -165,7 +163,7 @@ h1 {
 
 .page-header{
   height: 100vh;
-  
+
 }
 
 .listing{
