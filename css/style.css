@@ -144,17 +144,17 @@ html {
 body{
 	background-color: #303030;
   color: #E0E0E0;
-  font-family: 'Slabo 27px', serif;
 }
 
 h1 {
 
 }
-
 .listing{
   display: block;
-  /*margin-bottom: 10vh;*/
-  overflow: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 .timeline {
@@ -169,11 +169,9 @@ h1 {
 
 .textbox {
   width: 46vw;
-  float: right;
   height: auto;
   border-radius: 2px;
   padding: 1vw;
-  margin: 3vw;
   /*position: absolute;*/
   border-radius: 1vh;
   background-color: #484848;
@@ -184,7 +182,7 @@ h1 {
 }
 
 .circle {
-  /*float: left;*/
+
 	width: 9vw;
 	height: 9vw;
 	background: #B21212;
