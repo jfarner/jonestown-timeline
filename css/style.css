@@ -149,9 +149,11 @@ body{
 h1 {
 
 }
+
 .listing{
   display: block;
-  margin: 0 auto;
+  /*margin-bottom: 10vh;*/
+  overflow: auto;
 }
 
 .timeline {
@@ -166,8 +168,8 @@ h1 {
 
 .textbox {
   width: 46vw;
-  height: auto;
   float: right;
+  height: auto;
   border-radius: 2px;
   padding: 1vw;
   /*position: absolute;*/
