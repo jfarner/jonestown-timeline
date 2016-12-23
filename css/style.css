@@ -144,6 +144,7 @@ html {
 body{
 	background-color: #303030;
   color: #E0E0E0;
+  font-family: 'Slabo 27px', serif;
 }
 
 h1 {
@@ -172,6 +173,7 @@ h1 {
   height: auto;
   border-radius: 2px;
   padding: 1vw;
+  margin: 3vw;
   /*position: absolute;*/
   border-radius: 1vh;
   background-color: #484848;
