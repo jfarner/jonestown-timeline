@@ -1,21 +1,172 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0 auto;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*end of reset*/
+html {
+    text-rendering: optimizelegibility;
+}
+
+body{
+	background-color: #303030;
+}
+h1 {
+	color: #E0E0E0;
+}
+.page-header{
+	background-color: #303030;
+}
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 1% 0% 1%;
   position: relative;
+  background-color:  #303030;
+
 }
+.timeline >li > .timeline-panel:hover {
+	height: auto;
+}
+
 .timeline:before {
-  top: 0;
-  bottom: 0;
+  top: 5%;
+  bottom: 15%;
   position: absolute;
   content: " ";
-  width: 3px;
-  background-color: #EE2A1B;
-  left: 10%;
-  margin-left: -1.5px;
+  width: 40px;
+  background-color: #ff0000;
+  left: 6.7%;
+  margin-left: -20px;
 }
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
+  
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -35,36 +186,62 @@
 }
 .timeline > li > .timeline-panel {
   width: 46%;
+  height: auto;
   float: left;
-  border: 1px solid #d4d4d4;
+  
   border-radius: 2px;
   padding: 20px;
+  left: -40%;
   position: relative;
-  right: 40%;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  transition: all 10s;
+  border-radius: 15px;
+  background-color: #484848;
+  color:  #E0E0E0;
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 19px 3px rgba(0,0,0,1);
+  box-shadow: 0px 0px 19px 3px rgba(0,0,0,1);
 }
 
 .timeline > li > .timeline-button {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   font-size: 1.4;
   position: absolute;
   top: 16px;
-  left: 10%;
+  left: 5%;
   margin-left: -25px;
-  background-color: #999999;
+  background-color: #ff0000;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:hover{
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
 }
 
 .timeline-title {
   margin-top: 0;
 }
-
+p{
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	transition: white-space 10s;
+	transition: overflow 10s;
+	transition: text-overflow 10s;
+	
+}
+p:hover, h4:hover{
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
+	
+}
